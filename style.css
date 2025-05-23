@@ -14,29 +14,33 @@ body{
     height: 100vh;
     background-image: url(images/backgrounddd.png);
     background-size: contain; /* The background image will take up 50% of the container width */
-    background-position: calc(100% - 50px) center;
+    background-position: calc(100% - 35px) center;
     background-repeat: no-repeat;
     background-color:#080808;
      /* background-attachment: fixed; */
 } 
 .container{
-    padding: 10px 10%;
+    padding: 1px 10%;
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+   
 }
 
 .milan{
     color:#ff004f;
     width: 100px;
+    
 
 }
 h1{
      font-size: 32px;
      width: 100px;
+     
+  
 }
 /* .milan{
     /* position: absolute; */
@@ -71,8 +75,9 @@ h1{
     width: 100%;
  }
  .header-text{
-    margin-top: 100px;
+    margin-top: 180px;
     font-size: 30px;
+     
  }
  .header-text h1{
     font-size: 60px;
@@ -86,7 +91,7 @@ h1{
  }
  /*-----------------------------------------about------------->*/
  #about{
-    padding: 80px 0;
+    padding: 30px 0;
     color: #ababab;
 }
 .row{
@@ -200,7 +205,7 @@ flex-basis: 60%;
 }
 /*--------------------------portfolio---------------------------------*/
 #portfolio{
-    padding: 50px 0;
+    padding: 20px 0;
 }
 .work-list{
     display: grid;
@@ -342,49 +347,76 @@ form .btn2{
 }
 
 /*------------------------------css for small screens-----------------*/
-nav .fas{
+nav .fa-solid{
     display: none;
 }
 
 
 
-@media only screen and (max-with: 600px){
+@media only screen and (max-width: 600px){
     .header{background-image: url(images/backgroundd.png);
 }
  .header-text{
-        margin-top: 100%;
+        margin-top: 135%;
         font-size: 16px;
 
     }
-    .header-text h1{
+    .header-text h2{
         font-size: 30px;
+        /* margin-top: 90px; */
     }
-    nav .fas{
+ 
+  nav .fa-solid{
     display: block;
     font-size: 25px;
+}
+ nav h1{
+    margin-top: 20px;
+ }
+
+nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
     
-    
-    }
-    /* nav ul{
-        background: #ff004f;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        transition: right 0.3s ease-in-out;
-    } */
-     /* nav ul li{
-       margin: 10px 0;
-     } */
-     /* nav ul.visible {
-         right: 0; /* Show menu */
-    /* } */
-     /* nav ul li a {
-          color: white;
-          text-decoration: none;
-          font-size: 18px;
-    } */ 
+}
+nav ul li{
+    display: block;
+    margin: 25px;
+}
+nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+.sub-tittle{
+    font-size: 40px;
+}
+.about-col-1,.about-col-2{
+    flex-basis: 100%;
+}
+.about-col-1{
+    margin-bottom: 30px;
+}
+.about-col-2{
+    font-size: 18px;
+}
+.tab-links{
+    font-size: 30px;
+    margin-right: 20px;
+}
+.contact-left,.contact-right{
+    flex-basis: 100%;
+}
+.copyright{
+    font-size: 15px;
+}
 
 }
